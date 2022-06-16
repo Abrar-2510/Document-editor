@@ -4,16 +4,17 @@
         <meta charset="UTF-8" />
         <meta http-equiv="X-UA-Compatible" content="IE=edge" />
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-       <link rel="stylesheet" href="css/bootstrap.min.css" />
-    <link rel="stylesheet" href="css/all.min.css" />
-    <link rel="stylesheet" href="css/style.css" />
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;500&display=swap" rel="stylesheet" />
+        <link
+            href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/css/bootstrap.min.css"
+            rel="stylesheet"
+            integrity="sha384-+0n0xVW2eSR5OomGNYDnhzAbDsOXxcvSN1TPprVMTNDbiYZCxYbOOl7+AMvyTG2x"
+            crossorigin="anonymous"
+        />
+        <link rel="stylesheet" href="css/style.css" />
         <title>Document Editor</title>
     </head>
     <body>
-        <div class="container px-4 px-lg-5 h-100">
+        <div class="container  px-5 px-lg-5 h-100">
             <h4 id="title" class="font-weight-bold text-center mt-5 pb-3">Document Editor 👋</h4>
             <hr class="divider">
             <p class="text-center pb-3"> This editor for typing what you want and save this file as text, pdf or word</p>
@@ -21,10 +22,10 @@
                 <div class="main-controls d-flex">
                     <div class="dropdown">
                         <button
-                            class="btn dropdown-toggle"
+                            class="btn btn-primary dropdown-toggle"
                             data-bs-toggle="dropdown"
                         >
-                            File-Type
+                            File-type
                         </button>
                         <div class="dropdown-menu">
                             <button id="new-btn" class="dropdown-item">
@@ -38,33 +39,32 @@
                             </button>
                         </div>
                     </div>
-   
-                    <input  id="filename-input" type="text" value="untitled" placeholder="file-name"/>
+
+                    <input id="filename-input" type="text" value="untitled" />
                 </div>
                 <div class="control-btn-container d-flex">
-                    <button id="bold-btn" class="btn btn-light control-btn">
+                    <button id="bold-btn" class="btn btn-dark control-btn">
                         b
                     </button>
-                    <button id="underline-btn" class="btn btn-light control-btn">
+                    <button id="underline-btn" class="btn btn-dark control-btn">
                         u
                     </button>
-                    <button id="italic-btn" class="btn btn-light control-btn">
+                    <button id="italic-btn" class="btn btn-dark control-btn">
                         i
                     </button>
-                    <input id="color-btn" type="color" class="btn btn-light control-btn" />
+                    <input id="color-btn" type="color" class="control-btn" />
                 </div>
             </div>
-           
-            <div id="content" contenteditable="true" spellcheck="true" placeholder="please Subscribe Thapa technical"></div>
+
+            <div id="content" contenteditable="true" spellcheck="true"></div>
         </div>
 
-        <script src="htmltopdf.js"></script>
+        <script src="js/htmltopdf.js"></script>
         <script
             src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/js/bootstrap.bundle.min.js"
             integrity="sha384-gtEjrD/SeCtmISkJkNUaaKMoLD0//ElJ19smozuHV6z3Iehds+3Ulb9Bn9Plx0x4"
             crossorigin="anonymous"
         ></script>
-          <script src="scripts/bootstrap.bundle.min.js"></script>
-    <script src="scripts/all.min.js"></script>
+        <script src="js/script.js"></script>
     </body>
 </html>
